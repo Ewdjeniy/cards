@@ -1,0 +1,13 @@
+@import "./search-room-card/search-room-card.css";
+@import "./enter-card/enter-card.css";
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
