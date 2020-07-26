@@ -1,0 +1,147 @@
+@import "../about-room/about-room.css";
+@import "./__dropdown-dates/info-card__dropdown-dates.css";
+@import "./__dropdown-guests-field/info-card__dropdown-guests-field.css";
+@import "./__button-with-arrow/info-card__button-with-arrow.css";
+@import "./_theme_one/info-card__button-with-arrow_theme_one.css";
+@import "./_dropdown-guests-expanded/info-card_dropdown-guests-expanded.css";
+@import "./_dropdown-guests-refresh-active/info-card_dropdown-guests-refresh-active.css";
+@import "./__calculations/info-card__calculations.css";
+
+@font-face {
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Material Icons"), local(MaterialIcons-Regular), url(info-card/fonts/MaterialIcons-Regular.woff) format("woff"), url(info-card/fonts/MaterialIcons-Regular.ttf) format("ttf");
+}
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Montserrat Regular"), local(Montserrat-Regular), url(info-card/fonts/Montserrat-Regular.woff) format("woff"), url(info-card/fonts/Montserrat-Regular.ttf) format("ttf");
+}
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    src: local("Montserrat Regular"), local(Montserrat-Medium), url(info-card/fonts/Montserrat-Medium.woff) format("woff"), url(info-card/fonts/Montserrat-Medium.ttf) format("ttf");
+}
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    src: local("Montserrat SemiBold"), local(Montserrat-SemiBold), url(info-card/fonts/Montserrat-SemiBold.woff) format("woff"), url(info-card/fonts/Montserrat-SemiBold.ttf) format("ttf");
+}
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    src: local("Montserrat Bold"), local(Montserrat-Bold), url(info-card/fonts/Montserrat-Bold.woff) format("woff"), url(info-card/fonts/Montserrat-Bold.ttf) format("ttf");
+}
+@font-face {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 700;
+    src: local("Quicksand Bold"), local(Quicksand-Bold), url(info-card/fonts/Quicksand-Bold.woff) format("woff"), url(info-card/fonts/Quicksand-Bold.ttf) format("ttf");
+}
+
+/*Основные цвета, шрифты*/
+$darkShade100: #1F2041;
+$darkShade75: rgba(31, 32, 65, 0.75);
+$darkShade50: rgba(31, 32, 65, 0.5);
+$darkShade25: rgba(31, 32, 65, 0.25);
+$darkShade05: rgba(31, 32, 65, 0.05);
+$purple: #BC9CFF;
+$green: #6FCF97;
+$purpleGrad: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+$greenGrad: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+
+%H1 {
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    color: #1F2041;
+    letter-spacing: normal;
+}
+
+%H2 {
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+    color: #1F2041;
+}
+
+%H3 {
+    padding: 0;
+    margin: 0 0 0.5rem 0;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #1F2041;
+    text-transform: uppercase;
+}
+
+%Body {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+%material-icon {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    /* Preferred icon size */
+    display: inline-block;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+
+
+
+
+
+
+
+
+/*главный блок*/
+.info-card {
+    @extend %Body;
+    width: 38rem;
+    height: 51.1rem;
+    padding: 4rem 3rem 3rem 2.9rem;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 2.5rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.4rem;
+}

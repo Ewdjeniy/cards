@@ -1,0 +1,18 @@
+@import "./_active/switcher-picture_active.css";
+
+.switcher-picture {
+    width: 4.1rem;
+    height: 0.749rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.switcher-picture__elem {
+    width: 0.53rem;
+    height: 0.53rem;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+    border-radius: 50%;
+    flex-shrink: 0;
+}

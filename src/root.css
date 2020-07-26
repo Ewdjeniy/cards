@@ -1,5 +1,9 @@
 @import "./search-room-card/search-room-card.css";
 @import "./enter-card/enter-card.css";
+@import "./registration-card/registration-card.css";
+@import "./info-card/info-card.css";
+@import "./calendar/calendar.css";
+@import "./room888/room888.css";
 
 html {
     font-size: 10px;

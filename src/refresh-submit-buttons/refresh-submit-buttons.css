@@ -1,0 +1,43 @@
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    src: local("Montserrat SemiBold"), local(Montserrat-SemiBold), url(calendar/fonts/Montserrat-SemiBold.woff) format("woff"), url(calendar/fonts/Montserrat-SemiBold.ttf) format("ttf");
+}
+
+/*Основные цвета, шрифты*/
+
+$darkShade05: rgba(31, 32, 65, 0.05);
+$purple: #BC9CFF;
+$purpleGrad: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+
+%H3 {
+    padding: 0;
+    margin: 0 0 0.5rem 0;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #1F2041;
+    text-transform: uppercase;
+}
+
+/*главный блок*/
+.refresh-submit-buttons {
+    @extend %H3;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*кнопка очистить*/
+.refresh-submit-buttons__refresh {
+    color: rgba(31, 32, 65, 0.5);
+}
+
+/*кнопка применить*/
+.refresh-submit-buttons__submit {
+    color: #BC9CFF;
+    margin-left: auto;
+}

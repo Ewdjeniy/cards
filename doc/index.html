@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cards</title>
+  <link href="cards.css" rel="stylesheet"></head>
+  <body>
+<div class="search-room-card">
+  <h1 class="search-room-card__header">Найдём номера под ваши пожелания</h1>
+<div class="search-room-card__dropdown-dates">
+  <div class="search-room-card__dropdown-arrival">
+    <h3 class="search-room-card__dropdown-arrival-label">Прибытие</h3>
+    <div class="search-room-card__dropdown-arrival-switcher"><span>ДД.ММ.ГГГГ</span>
+      <div class="search-room-card__dropdown-arrival-arrow-wrapper"><span class="search-room-card__dropdown-arrival-arrow">keyboard_arrow_down</span></div>
+    </div>
+  </div>
+  <div class="search-room-card__dropdown-departure">
+    <h3 class="search-room-card__dropdown-departure-label">Выезд</h3>
+    <div class="search-room-card__dropdown-departure-switcher"><span>ДД.ММ.ГГГГ</span>
+      <div class="search-room-card__dropdown-departure-arrow-wrapper"><span class="search-room-card__dropdown-departure-arrow">keyboard_arrow_down</span></div>
+    </div>
+  </div>
+</div>
+<div class="search-room-card__dropdown-guests-field">
+  <h3 class="search-room-card__dropdown-guests-field-label">Гости</h3>
+  <div class="search-room-card__dropdown-guests">
+    <div class="search-room-card__dropdown-guests-switcher"><span>Сколько гостей</span>
+      <div class="search-room-card__dropdown-guests-arrow-wrapper"><span class="search-room-card__dropdown-guests-arrow">keyboard_arrow_down</span></div>
+    </div>
+    <div class="search-room-card__dropdown-guests-inputs">
+      <div class="search-room-card__dropdown-guests-input"><span class="search-room-card__dropdown-guests-input-label">Взрослые</span>
+        <div class="search-room-card__dropdown-guests-minus-wrapper"><span>-</span></div><span class="search-room-card__dropdown-guests-number">0</span>
+        <input class="search-room-card__dropdown-guests-input-hidden" type="number" value="0">
+        <div class="search-room-card__dropdown-guests-plus-wrapper"><span>+</span></div>
+      </div>
+      <div class="search-room-card__dropdown-guests-input"><span class="search-room-card__dropdown-guests-input-label">Дети</span>
+        <div class="search-room-card__dropdown-guests-minus-wrapper"><span>-</span></div><span class="search-room-card__dropdown-guests-number">0</span>
+        <input class="search-room-card__dropdown-guests-input-hidden" type="number" value="0">
+        <div class="search-room-card__dropdown-guests-plus-wrapper"><span>+</span></div>
+      </div>
+      <div class="search-room-card__dropdown-guests-input"><span class="search-room-card__dropdown-guests-input-label">Младенцы</span>
+        <div class="search-room-card__dropdown-guests-minus-wrapper"><span>-</span></div><span class="search-room-card__dropdown-guests-number">0</span>
+        <input class="search-room-card__dropdown-guests-input-hidden" type="number" value="0">
+        <div class="search-room-card__dropdown-guests-plus-wrapper"><span>+</span></div>
+      </div>
+      <div class="search-room-card__dropdown-guests-buttons">
+        <div class="search-room-card__dropdown-guests-refresh ">Очистить</div>
+        <div class="search-room-card__dropdown-guests-submit">Применить</div>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="search-room-card__button-with-arrow search-room-card__button-with-arrow_theme_one"> <span class="search-room-card__button-with-arrow-label">Подобрать номер</span><span class="search-room-card__button-arrow" type="button">arrow_forward</span></button>
+</div>
+<div class="enter-card">
+  <h1 class="enter-card__header">Войти</h1>
+<input class="enter-card__email-input" type="email" placeholder="Email">
+<input class="enter-card__password-input" type="password" placeholder="Пароль">
+<button class="enter-card__button-with-arrow enter-card__button-with-arrow_theme_one"> <span class="enter-card__button-with-arrow-label">Войти</span><span class="enter-card__button-arrow" type="button">arrow_forward</span></button>
+  <div class="enter-card__create-account"><span class="enter-card__create-account-span">Нет аккаунта на Toxin?</span>
+<button class="enter-card__click-button enter-card__click-button_theme_two">Создать</button>
+  </div>
+</div>
+<div class="registration-card">
+  <h1 class="registration-card__header">Регистрация аккаунта</h1>
+<input class="registration-card__name-input" type="text" placeholder="Имя">
+<input class="registration-card__surname-input" type="text" placeholder="Фамилия">
+<div class="registration-card__radio-sex">
+  <div class="registration-card__radio-sex-man-wrapper registration-card__radio-sex_checked">
+    <div class="registration-card__radio-sex-man-input">
+      <div class="registration-card__radio-sex-man-checker"></div>
+    </div><span class="registration-card__radio-sex-man-label">Мужчина</span>
+  </div>
+  <div class="registration-card__radio-sex-woman-wrapper">
+    <div class="registration-card__radio-sex-woman-input">
+      <div class="registration-card__radio-sex-woman-checker"></div>
+    </div><span class="registration-card__radio-sex-woman-label">Женщина</span>
+  </div>
+</div>
+<div class="registration-card__masked-text-field">
+  <h3 class="registration-card__masked-text-field-label">дата рождения</h3>
+  <input class="registration-card__masked-input" type="text" placeholder="ДД.ММ.ГГГГ">
+</div>
+  <h3 class="registration-card__data-label">данные для входа в сервис</h3>
+<input class="registration-card__email-input" type="email" placeholder="Email">
+<input class="registration-card__password-input" type="password" placeholder="Пароль">
+<div class="registration-card__toggle">
+  <div class="registration-card__toggle-wrapper">
+    <div class="registration-card__toggle-btn"></div><span class="registration-card__toggle-btn-label">Получать спецпредложения</span>
+  </div>
+</div>
+<button class="registration-card__button-with-arrow registration-card__button-with-arrow_theme_one"> <span class="registration-card__button-with-arrow-label">Перейти к оплате</span><span class="registration-card__button-arrow" type="button">arrow_forward</span></button>
+  <div class="registration-card__create-account"><span class="registration-card__create-account-span">Уже есть аккаунт на Toxin</span>
+<button class="registration-card__click-button registration-card__click-button_theme_two">Войти</button>
+  </div>
+</div>
+<div class="info-card">
+<div class="about-room">
+  <div class="about-room__info"><span class="about-room__badge-number">№ </span><span class="about-room__room-number">888</span><span class="about-room__room-category"> люкс</span></div>
+  <div class="about-room__money-for-room"><span class="about-room__money">9 990</span>&#8381<span class="about-room__time"> в сутки</span></div>
+</div>
+<div class="info-card__dropdown-dates">
+  <div class="info-card__dropdown-arrival">
+    <h3 class="info-card__dropdown-arrival-label">Прибытие</h3>
+    <div class="info-card__dropdown-arrival-switcher"><span>19.08.2020</span>
+      <div class="info-card__dropdown-arrival-arrow-wrapper"><span class="info-card__dropdown-arrival-arrow">keyboard_arrow_down</span></div>
+    </div>
+  </div>
+  <div class="info-card__dropdown-departure">
+    <h3 class="info-card__dropdown-departure-label">Выезд</h3>
+    <div class="info-card__dropdown-departure-switcher"><span>23.08.2020</span>
+      <div class="info-card__dropdown-departure-arrow-wrapper"><span class="info-card__dropdown-departure-arrow">keyboard_arrow_down</span></div>
+    </div>
+  </div>
+</div>
+<div class="info-card__dropdown-guests-field">
+  <h3 class="info-card__dropdown-guests-field-label">Гости</h3>
+  <div class="info-card__dropdown-guests">
+    <div class="info-card__dropdown-guests-switcher"><span>3 гостя</span>
+      <div class="info-card__dropdown-guests-arrow-wrapper"><span class="info-card__dropdown-guests-arrow material-icons">keyboard_arrow_down</span></div>
+    </div>
+    <div class="info-card__dropdown-guests-inputs">
+      <div class="info-card__dropdown-guests-input"><span class="info-card__dropdown-guests-input-label">Взрослые</span>
+        <div class="info-card__dropdown-guests-minus-wrapper"><span>-</span></div><span class="info-card__dropdown-guests-number">0</span>
+        <input class="info-card__dropdown-guests-input-hidden" type="number" value="0">
+        <div class="info-card__dropdown-guests-plus-wrapper"><span>+</span></div>
+      </div>
+      <div class="info-card__dropdown-guests-input"><span class="info-card__dropdown-guests-input-label">Дети</span>
+        <div class="info-card__dropdown-guests-minus-wrapper"><span>-</span></div><span class="info-card__dropdown-guests-number">0</span>
+        <input class="info-card__dropdown-guests-input-hidden" type="number" value="0">
+        <div class="info-card__dropdown-guests-plus-wrapper"><span>+</span></div>
+      </div>
+      <div class="info-card__dropdown-guests-input"><span class="info-card__dropdown-guests-input-label">Младенцы</span>
+        <div class="info-card__dropdown-guests-minus-wrapper"><span>-</span></div><span class="info-card__dropdown-guests-number">0</span>
+        <input class="info-card__dropdown-guests-input-hidden" type="number" value="0">
+        <div class="info-card__dropdown-guests-plus-wrapper"><span>+</span></div>
+      </div>
+      <div class="info-card__dropdown-guests-buttons">
+        <div class="info-card__dropdown-guests-refresh ">Очистить</div>
+        <div class="info-card__dropdown-guests-submit">Применить</div>
+      </div>
+    </div>
+  </div>
+</div>
+<table class="info-card__calculations">
+  <tr>
+    <td class="info-card__first-td" colspan="2"><span class="info-card__money-per-day">9 990</span>&#8381 x <span class="info-card__amount-of-days">4 </span><span>суток</span></td>
+    <td class="info-card__last-td"><span class="info-card__money-result">39 960</span>&#8381</td>
+  </tr>
+  <tr>
+    <td class="info-card__discount-td">Сбор за услуги: скидка <span class="info-card__discount">2 179</span>&#8381</td>
+    <td class="info-card__badge-info-td">
+      <div class="info-card__badge-info">i</div>
+    </td>
+    <td class="info-card__last-td"><span class="info-card__discount-result">0</span>&#8381</td>
+  </tr>
+  <tr>
+    <td class="info-card__charges">Сбор за дополнительные услуги</td>
+    <td>
+      <div class="info-card__badge-info">i</div>
+    </td>
+    <td class="info-card__last-td3"><span class="info-card__discount-result">300</span>&#8381</td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      <div class="info-card__calculations-result"><span>Итого</span><span class="info-card__line"></span><span class="info-card__calculations-result">38 081</span>&#8381</div>
+    </td>
+  </tr>
+</table>
+<button class="info-card__button-with-arrow info-card__button-with-arrow_theme_one"> <span class="info-card__button-with-arrow-label">Забронировать</span><span class="info-card__button-arrow" type="button">arrow_forward</span></button>
+</div>
+<div class="calendar">
+  <div class="calendar__month-turner"><span class="calendar__arrow-left">arrow_back</span>
+    <h2 class="calendar__month-and-year">Август 2020</h2><span class="calendar__arrow-right">arrow_forward</span>
+  </div>
+<table class="calendar__month">
+  <tr>
+    <th class="calendar__th">Пн</th>
+    <th class="calendar__th">Вт</th>
+    <th class="calendar__th">Ср</th>
+    <th class="calendar__th">Чт</th>
+    <th class="calendar__th">Пт</th>
+    <th class="calendar__th">Сб</th>
+    <th class="calendar__th">Вс</th>
+  </tr>
+  <tr>
+    <td class="calendar_opacity_25">27</td>
+    <td class="calendar_opacity_25">28</td>
+    <td class="calendar_opacity_25">29</td>
+    <td class="calendar_opacity_25">30</td>
+    <td class="calendar_opacity_25">31</td>
+    <td>1</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    <td class="calendar_theme_green">8</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+    <td>14</td>
+    <td>15</td>
+    <td>16</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>18</td>
+    <td class="calendar_activated">19</td>
+    <td class="calendar_theme_purple">20</td>
+    <td class="calendar_theme_purple">21</td>
+    <td class="calendar_theme_purple">22</td>
+    <td class="calendar_activated">23</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>25</td>
+    <td>26</td>
+    <td>27</td>
+    <td>28</td>
+    <td>29</td>
+    <td>30</td>
+  </tr>
+</table>
+<div class="refresh-submit-buttons">
+  <div class="refresh-submit-buttons__refresh">Очистить</div>
+  <div class="refresh-submit-buttons__submit">Применить</div>
+</div>
+</div>
+<div class="room888">
+  <div class="room888__slider-window">
+    <div class="room888__slider"><img class="room888__slider-img" src="images/room888.jpg"><img class="room888__slider-img" src="" alt="room888"><img class="room888__slider-img" src="" alt="room888"><img class="room888__slider-img" src="" alt="room888"><img class="room888__slider-img" src="" alt="room888">
+      <div class="room888__switcher-picture-wrapper">
+<div class="switcher-picture"><span class="switcher-picture__elem switcher-picture_active"></span><span class="switcher-picture__elem"></span><span class="switcher-picture__elem"></span><span class="switcher-picture__elem"></span></div>
+      </div>
+      <div class="room888__switcher-arrow-right-wrapper">
+<div class="switcher-arrow-right"><span class="switcher-arrow-right__arrow-right">keyboard_arrow_left</span></div>
+      </div>
+      <div class="room888__switcher-arrow-left-wrapper">
+<div class="switcher-arrow-left"><span class="switcher-arrow-left__arrow-left">keyboard_arrow_left</span></div>
+      </div>
+    </div>
+  </div>
+<div class="room888__about-room">
+  <div class="room888__info"><span class="room888__badge-number">№ </span><span class="room888__room-number">888</span><span class="room888__room-category"> люкс</span></div>
+  <div class="room888__money-for-room"><span class="room888__money">9 990</span>&#8381<span class="room888__time"> в сутки</span></div>
+</div>
+  <div class="room888__rate-wrapper">
+<div class="room888__rate room888__rate_five-star"><span class="room888__rate-star1"></span><span class="room888__rate-star2"></span><span class="room888__rate-star3"></span><span class="room888__rate-star4"></span><span class="room888__rate-star5"></span></div>
+    <div class="room888__comments-indicator"><span class="room888__comments-amount">145</span><span> Отзывов</span></div>
+  </div>
+</div>
+  <script type="text/javascript" src="cards.bundle.js"></script></body>
+</html>

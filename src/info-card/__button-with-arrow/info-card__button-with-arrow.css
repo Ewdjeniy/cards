@@ -1,0 +1,20 @@
+/*блок кнопки со стрелкой*/
+.info-card__button-with-arrow {
+    @extend %H3;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 0.5rem;
+}
+
+/*Блок названия кнопки со стрелкой*/
+.info-card__button-with-arrow-label {
+    width: 100%;
+}
+
+/*Стрелка*/
+.info-card__button-arrow {
+    @extend %material-icon;
+    position: absolute;
+    left: 89.7%;
+}

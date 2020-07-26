@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Material Icons"), local(MaterialIcons-Regular), url(about-room/fonts/MaterialIcons-Regular.woff) format("woff"), url(about-room/fonts/MaterialIcons-Regular.ttf) format("ttf");
+}
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Montserrat Regular"), local(Montserrat-Regular), url(about-room/fonts/Montserrat-Regular.woff) format("woff"), url(about-room/fonts/Montserrat-Regular.ttf) format("ttf");
+}
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    src: local("Montserrat Regular"), local(Montserrat-Medium), url(about-room/fonts/Montserrat-Medium.woff) format("woff"), url(about-room/fonts/Montserrat-Medium.ttf) format("ttf");
+}
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    src: local("Montserrat SemiBold"), local(Montserrat-SemiBold), url(about-room/fonts/Montserrat-SemiBold.woff) format("woff"), url(about-room/fonts/Montserrat-SemiBold.ttf) format("ttf");
+}
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    src: local("Montserrat Bold"), local(Montserrat-Bold), url(about-room/fonts/Montserrat-Bold.woff) format("woff"), url(about-room/fonts/Montserrat-Bold.ttf) format("ttf");
+}
+@font-face {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 700;
+    src: local("Quicksand Bold"), local(Quicksand-Bold), url(about-room/fonts/Quicksand-Bold.woff) format("woff"), url(about-room/fonts/Quicksand-Bold.ttf) format("ttf");
+}
+
+/*Основные цвета, шрифты*/
+$darkShade100: #1F2041;
+$darkShade75: rgba(31, 32, 65, 0.75);
+$darkShade50: rgba(31, 32, 65, 0.5);
+$darkShade25: rgba(31, 32, 65, 0.25);
+$darkShade05: rgba(31, 32, 65, 0.05);
+$purple: #BC9CFF;
+$green: #6FCF97;
+$purpleGrad: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+$greenGrad: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+
+%H1 {
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    color: #1F2041;
+    letter-spacing: normal;
+}
+
+%H2 {
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+    color: #1F2041;
+}
+
+%H3 {
+    padding: 0;
+    margin: 0 0 0.5rem 0;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #1F2041;
+    text-transform: uppercase;
+}
+
+%Body {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+%material-icon {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    /* Preferred icon size */
+    display: inline-block;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+/*заголовок главного блока*/
+.about-room {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.about-room__badge-number {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: #1F2041;
+}
+
+.about-room__room-number {
+    @extend %H1;
+}
+
+.about-room__room-category {
+    @extend %H3;
+    color: $purple;
+}
+
+.about-room__money-for-room {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.about-room__time {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: rgba(31, 32, 65, 0.5);
+}

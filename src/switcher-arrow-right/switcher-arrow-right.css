@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Material Icons"), local(MaterialIcons-Regular), url(room888/fonts/MaterialIcons-Regular.woff) format("woff"), url(room888/fonts/MaterialIcons-Regular.ttf) format("ttf");
+}
+
+%material-icon {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    /* Preferred icon size */
+    display: inline-block;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.switcher-arrow-right {
+    width: 4.2rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    color: transparent;
+    cursor: pointer;
+}
+
+.switcher-arrow-right:hover {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+    color: #FFFFFF;
+    transition: background 2s linear, color 0.5s linear;
+}
+
+.switcher-arrow-right__arrow-right {
+    @extend %material-icon;
+}

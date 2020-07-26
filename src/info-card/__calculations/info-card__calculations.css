@@ -1,0 +1,60 @@
+.info-card__calculations {
+    width: 100%;
+    margin-bottom: 1.8rem;
+}
+
+.info-card__money-per-day {
+    display: inline-block;
+    height: 2.7rem;
+}
+
+.info-card__discount-td {
+    height: 3.2rem;
+    width: 21.4rem;
+    text-align: left;
+}
+
+.info-card__calculations-result {
+    @extend %H2;
+    display: flex;
+    align-items: flex-end;
+    height: 4.7rem;
+}
+
+.info-card__calculations-result {
+    flex-shrink: 0;
+}
+
+.info-card__line {
+    width: 100%;
+    height: 0.8rem;
+    border-top: 1px dashed rgba(31, 32, 65, 0.25);
+    margin: 0 15px 0 15px;
+}
+
+.info-card__badge-info {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $darkShade25;
+    color: $darkShade25;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.info-card__last-td, .info-card__last-td3 {
+    padding: 0;
+    text-align: right;
+    vertical-align: center;
+}
+
+.info-card__last-td3 {
+    vertical-align: top;
+}
+
+.info-card__charges {
+    line-height: 1.8rem;
+    height: 4.3rem;
+}

@@ -42,13 +42,16 @@
     src: local("Quicksand Bold"), local(Quicksand-Bold), url(search-room-card/fonts/Quicksand-Bold.woff) format("woff"), url(search-room-card/fonts/Quicksand-Bold.ttf) format("ttf");
 }
 
-$DarkShade100: #1F2041;
-$DarkShade75: rgba(31, 32, 65, 0.75);
-$DarkShade50: rgba(31, 32, 65, 0.5);
-$DarkShade25: rgba(31, 32, 65, 0.25);
-$DarkShade05: rgba(31, 32, 65, 0.05);
-$Purple: #BC9CFF;
-$Green: #6FCF97;
+/*Основные цвета, шрифты*/
+$darkShade100: #1F2041;
+$darkShade75: rgba(31, 32, 65, 0.75);
+$darkShade50: rgba(31, 32, 65, 0.5);
+$darkShade25: rgba(31, 32, 65, 0.25);
+$darkShade05: rgba(31, 32, 65, 0.05);
+$purple: #BC9CFF;
+$green: #6FCF97;
+$purpleGrad: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+$greenGrad: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 
 %H1 {
     padding: 0;
@@ -128,7 +131,7 @@ $Green: #6FCF97;
 
 
 
-
+/*главный блок*/
 .search-room-card {
     @extend %Body;
     width: 38rem;
@@ -141,6 +144,7 @@ $Green: #6FCF97;
     border-radius: 0.4rem;
 }
 
+/*заголовок главного блока*/
 .search-room-card__header {
     @extend %H1;
     margin-bottom: 2rem;

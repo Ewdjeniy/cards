@@ -1,0 +1,4 @@
+/*кнопка очистить с модификатором info-card_dropdown-guests-refresh-active*/
+.info-card_dropdown-guests-refresh-active .info-card__dropdown-guests-refresh {
+    display: block;
+}

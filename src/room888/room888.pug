@@ -1,0 +1,20 @@
+div(class="room888")
+    div(class="room888__slider-window")
+        div(class="room888__slider")
+            img(class="room888__slider-img" src=require("./images/room888.jpg"))
+            img(class="room888__slider-img" src="" alt="room888")
+            img(class="room888__slider-img" src="" alt="room888")
+            img(class="room888__slider-img" src="" alt="room888")
+            img(class="room888__slider-img" src="" alt="room888")
+            div(class="room888__switcher-picture-wrapper")
+                include ../switcher-picture/switcher-picture.pug
+            div(class="room888__switcher-arrow-right-wrapper")
+                include ../switcher-arrow-right/switcher-arrow-right.pug
+            div(class="room888__switcher-arrow-left-wrapper")
+                include ../switcher-arrow-left/switcher-arrow-left.pug
+    include ./__about-room/room888__about-room.pug
+    div(class="room888__rate-wrapper")
+        include ./__rate/room888__rate.pug
+        div(class="room888__comments-indicator")
+            span(class="room888__comments-amount") 145
+            span  Отзывов
